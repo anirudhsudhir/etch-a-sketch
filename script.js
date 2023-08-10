@@ -12,4 +12,10 @@ function createGrid(gridSize) {
     }
 }
 
+function colourGrid() {
+    const gridElements = document.querySelectorAll('.grid-row');
+    gridElements.forEach(element => element.addEventListener('mouseenter', (e) => e.target.style.backgroundColor = 'blue'));
+}
+
 createGrid(10);
+colourGrid();
