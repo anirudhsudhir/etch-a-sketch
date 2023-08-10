@@ -1,0 +1,24 @@
+.grid {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+.grid-column {
+    flex: auto;
+    border: 2px black solid;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    padding: 0;
+    margin: 0;
+    flex: auto;
+}
