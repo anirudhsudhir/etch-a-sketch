@@ -1,5 +1,6 @@
 function createGrid(gridSize) {
     const grid = document.querySelector('.grid');
+    if (counter === 1) grid.innerHTML = "";
     for (let i = 1; i <= gridSize; i++) {
         const gridColumn = document.createElement('div');
         gridColumn.classList.add('grid-column');
@@ -17,5 +18,16 @@ function colourGrid() {
     gridElements.forEach(element => element.addEventListener('mouseenter', (e) => e.target.style.backgroundColor = 'blue'));
 }
 
-createGrid(10);
+function getGridSize() {
+    createGrid(10);
+    const input = document.querySelector('#grid-size');
+    const button = document.querySelector('#grid-update');
+    button.addEventListener('click', (e) => {
+        counter = 1;
+        createGrid(Number(input.value));
+    });
+}
+
+let counter = 0;
+getGridSize();
 colourGrid();
