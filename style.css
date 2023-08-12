@@ -34,3 +34,12 @@ body {
     margin: 0;
     flex: auto;
 }
+
+#grid-size {
+    width: 50px;
+}
+
+#grid-update {
+    color: white;
+    background-color: black;
+}
