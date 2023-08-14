@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Etch A Sketch</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <div class="head"></div>
+  <body>
+    <div class="head">Etch A Sketch</div>
     <div class="content">
-        <div class="user-input">
-            <input type="text" id="grid-size">
-            <button id="grid-update">Update Grid Size</button>
+      <div class="user-input">
+        <div class="gridsize-input">
+          Enter the size of the grid(1-100):
+          <input type="text" id="grid-size" />
+          <button id="grid-update">Update Grid Size</button>
         </div>
-        <div class="grid">
+        <div class="color-selection">
+          <input type="color" value="blue" id="color-input" />
+          <button class="color-button" id="white">Eraser</button>
         </div>
+      </div>
+      <div class="grid"></div>
     </div>
     <div class="footer"></div>
-</body>
-
+  </body>
 </html>
