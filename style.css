@@ -2,8 +2,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 95vh;
+  min-height: 95vh;
   justify-content: space-between;
+  font-family: "Asap", sans-serif;
 }
 
 .content {
@@ -44,4 +45,27 @@ body {
 #grid-update {
   color: white;
   background-color: black;
+}
+
+.head{
+  margin: 0 auto 15px;
+  font-size: 40px;
+}
+
+.github-link {
+  margin-left: auto;
+}
+
+.github-link a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.github-link img {
+  height: 30px;
+  width: auto;
 }
