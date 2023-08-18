@@ -1,3 +1,3 @@
-A browser version of Etch A Sketch (currently under active development)
+A browser version of Etch A Sketch
 
 Currently playable only on large screen devices(computers)
