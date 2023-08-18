@@ -11,7 +11,7 @@ function createGrid(gridSize) {
             gridColumn.appendChild(gridRow);
         }
     }
-    if (colorChoice === 'white') colorChoice = '#0000FF';
+    if (colorChoice === 'white') colorChoice = '#97BC62';
     colourGrid();
     resetGrid();
 }
@@ -27,7 +27,7 @@ function colourGrid() {
     random.addEventListener('click', () => randomColourActive = 1);
     const eraser = document.querySelector("#eraser");
     eraser.addEventListener("click", () => {
-        colorChoice = 'white';
+        colorChoice = '#ADD8E6';
         randomColourActive = 0;
     });
     gridElements.forEach((element) =>
@@ -82,7 +82,7 @@ function getRandomColour() {
     return randomColour;
 }
 
-let colorChoice = "#0000FF";
+let colorChoice = "#00008B";
 let gridSize = 20;
 let warning = 0;
 let randomColourActive = 0;

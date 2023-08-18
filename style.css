@@ -5,6 +5,8 @@ body {
   min-height: 95vh;
   justify-content: space-between;
   font-family: "Asap", sans-serif;
+  background-color: #ADD8E6;
+  color: #00008B;
 }
 
 .content {
@@ -17,13 +19,13 @@ body {
   height: 600px;
   width: 600px;
   display: flex;
-  border-left: 1px black solid;
-  border-right: 1px black solid;
+  border-left: 1px #00008B solid;
+  border-right: 1px #00008B solid;
 }
 
 .grid-column {
   flex: auto;
-  border: 1px black solid;
+  border: 1px #00008B solid;
   padding: 0;
   margin: 0;
   display: flex;
@@ -31,8 +33,8 @@ body {
 }
 
 .grid-row {
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
+  border-top: 1px #00008B solid;
+  border-bottom: 1px #00008B solid;
   padding: 0;
   margin: 0;
   flex: auto;
@@ -42,9 +44,20 @@ body {
   width: 50px;
 }
 
-#grid-update {
-  color: white;
-  background-color: black;
+button {
+  background-color: #00008B;
+  color: #ADD8E6;
+  width: 200px;
+  font-family: 'Asap', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px #ADD8E6 solid;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: #ADD8E6;
+  color: #00008B;
 }
 
 .head{
@@ -58,7 +71,7 @@ body {
 
 .github-link a {
   text-decoration: none;
-  color: black;
+  color: #00008B;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -68,4 +81,37 @@ body {
 .github-link img {
   height: 30px;
   width: auto;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00008B;
+  color: #ADD8E6;
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  border: 2px #00008B solid;
+  border-radius: 10px;
+}
+
+.user-input button {
+  width: 180px;
+  height: 40px;
+}
+
+.gridsize-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-wheel input {
+  height: 30px;
+  width: 50px;
+  margin: 5px;
 }
